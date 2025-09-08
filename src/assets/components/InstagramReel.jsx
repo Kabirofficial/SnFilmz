@@ -12,7 +12,6 @@ export default function InstagramReel({ reelId }) {
         script.async = true;
         document.body.appendChild(script);
       } else {
-        // Delay processing to make sure script is loaded
         setTimeout(() => {
           if (window.instgrm) {
             window.instgrm.Embeds.process();
@@ -40,7 +39,7 @@ export default function InstagramReel({ reelId }) {
           margin: "0 auto",
           padding: 0,
           width: "100%",
-          maxWidth: "540px", // Optional: adjust max width
+          maxWidth: "540px",
         }}
       ></blockquote>
     </motion.div>
